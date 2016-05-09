@@ -1,11 +1,15 @@
 version: '2'
 
 services:
- test-service:
+  test-service:
     build:
       context: ./cds-service-example-nodejs
       dockerfile: Dockerfile
     image: cdshooks/test-service
+    expose:
+      - 9000
+    environment:
+      PORT: "9000"
     networks:
      - internal
   invoker:
@@ -13,6 +17,10 @@ services:
       context: ./cds-invoker
       dockerfile: Dockerfile
     image: cdshooks/cds-invoker
+    expose:
+      - 9000
+    environment:
+      PORT: "9000"
     networks:
      - internal
 

@@ -5,7 +5,6 @@ services:
     networks:
      - proxy-tier
     environment:
-     - BASE_URL=https://test-service.cds-hooks.org
      - VIRTUAL_HOST=test-service.cds-hooks.org
      - VIRTUAL_NETWORK=nginx-proxy
      - VIRTUAL_PORT=9000
@@ -15,16 +14,12 @@ services:
     networks:
      - proxy-tier
     environment:
-     - BASE_URL=https://invoker.cds-hooks.org
      - VIRTUAL_HOST=invoker.cds-hooks.org
      - VIRTUAL_NETWORK=nginx-proxy
-     - VIRTUAL_PORT=3000
+     - VIRTUAL_PORT=9000
      - LETSENCRYPT_HOST=invoker.cds-hooks.org
      - LETSENCRYPT_EMAIL=letsencrypt@mg.syncfor.science
 networks:
   proxy-tier:
     external:
       name: nginx-proxy
-
-volumes:
-  derby: {}
