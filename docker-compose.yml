@@ -3,7 +3,7 @@ version: '2'
 services:
   test-service:
     build:
-      context: ./cds-service-example-nodejs
+      context: ./builds/cds-service-example-nodejs
       dockerfile: Dockerfile
     image: cdshooks/test-service
     expose:
@@ -14,7 +14,7 @@ services:
      - internal
   invoker:
     build:
-      context: ./cds-invoker
+      context: ./builds/cds-invoker
       dockerfile: Dockerfile
     image: cdshooks/cds-invoker
     expose:

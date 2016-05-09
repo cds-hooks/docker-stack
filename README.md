@@ -7,12 +7,13 @@ Edit `docker-compose.override.yml` as needed to configure your preferred local p
  * `docker-compose up`: launch the stack
  * `docker-compose  run tasks load-sample-data`: load sample data
 
-Now `curl http://localhost:9000/api/fhir/Patient?` should return sample data!
 
 By default, you'll have servers running at ports:
 
  * `9000`: Test Service
  * `9001`: Inovker
+
+For example, visit http://localhost:9000
 
 ---
 

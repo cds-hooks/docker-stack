@@ -1,6 +1,6 @@
 [submodule "cds-service-example-nodejs"]
-	path = cds-service-example-nodejs
+	path = builds/cds-service-example-nodejs
 	url = https://github.com/cds-hooks/cds-service-example-nodejs
 [submodule "cds-invoker"]
-	path = cds-invoker
+	path = builds/cds-invoker
 	url = https://github.com/cds-hooks/cds-invoker
