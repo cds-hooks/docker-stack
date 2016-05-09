@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  test-service:
+    ports:
+     - "9000:9000"
+  invoker:
+    ports:
+     - "9001:3000"
