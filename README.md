@@ -4,8 +4,16 @@ CDS Hooks provides a pattern for invoking decision support from within a clinici
 
  * Docs: [cds-hooks.org](http://cds-hooks.org/)
  * Demo: [demo.cds-hooks.org](http://demo.cds-hooks.org/)
+ 
+# use and deploy this stack
 
-# reference-stack-docker
+## clone this repo with submodules
+ * `git clone --recursive https://github.com/cds-hooks/docker-stack`
+
+## update submodules  
+ * `git submodule update --init --recursive`
+
+## reference-stack-docker
 
 To run it, you need Docker >= 1.10, and docker-compose
 
