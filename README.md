@@ -1,3 +1,10 @@
+# what is CDS Hooks?
+
+CDS Hooks provides a pattern for invoking decision support from within a clinician’s EHR workflow.
+
+ * Docs: [cds-hooks.org](http://cds-hooks.org/)
+ * Demo: [demo.cds-hooks.org](http://demo.cds-hooks.org/)
+
 # reference-stack-docker
 
 To run it, you need Docker >= 1.10, and docker-compose
